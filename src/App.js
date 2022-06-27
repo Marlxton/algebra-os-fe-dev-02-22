@@ -16,7 +16,8 @@ function App() {
               <InputElement label="Password" type="password" />
           </div>
           <div className="form-field">
-           <Button />
+           <Button type="button">Sign in</Button>
+           <Button type="reset">Reset</Button>
           </div>
         </form>
   );

@@ -5,3 +5,7 @@
     min-height: 32px;
     padding: 0 8px;
   }
+
+  .button + .button {
+    margin-left: 4px;
+  }
