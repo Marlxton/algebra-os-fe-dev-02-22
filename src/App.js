@@ -1,11 +1,18 @@
 import "./App.css";
 import {InputElement} from './components/InputElement';
 import Button from './components/Button';
+import FormError from './components/FormError';
+import FormMessage from './components/FormMessage';
 
 
 
 
 function App() {
+  const isSignedIn = false;
+
+  
+  
+
   return ( 
         <form className="form">
           <div className="form-field">
@@ -19,6 +26,9 @@ function App() {
            <Button type="button">Sign in</Button>
            <Button type="reset">Reset</Button>
           </div>
+          <FormError visible={!isSignedIn} />
+          <FormMessage visible={isSignedIn} />
+
         </form>
   );
 }
