@@ -1,5 +1,6 @@
 import "./App.css";
 import {InputElement} from './components/InputElement';
+import Button from './components/Button';
 
 
 
@@ -12,10 +13,10 @@ function App() {
           </div>
 
           <div className="form-field">
-              <InputElement label="Password" type="pasword" />
+              <InputElement label="Password" type="password" />
           </div>
           <div className="form-field">
-            <button className="button">Sign input</button>
+           <Button />
           </div>
         </form>
   );

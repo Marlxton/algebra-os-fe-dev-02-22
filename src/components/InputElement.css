@@ -1,0 +1,10 @@
+.label {
+    margin-bottom: 8px;
+  }
+  .input {
+    border: 1px solid green;
+    background-color: lightblue;
+    min-height: 32px;
+    padding: 0 8px;
+    color: red;
+  }
