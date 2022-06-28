@@ -13,7 +13,7 @@ function App() {
 
   return ( 
       <div>
-        <User src="/image.jpg" alt="Domagoj" username="Domagoj" />
+        {isSignedIn && <User src="/image.jpg" alt="Domagoj" username="Domagoj" />}
         <form className="form">
           <div className="form-field">
             <InputElement label="Username" type="text" />
