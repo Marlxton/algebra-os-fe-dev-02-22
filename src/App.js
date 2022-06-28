@@ -4,21 +4,17 @@ import Button from './components/Button';
 import FormError from './components/FormError';
 import FormMessage from './components/FormMessage';
 import {User} from './components/User';
+import {Counter} from './components/Counter';
 
 
 
 
 function App() {
   const isSignedIn = true;
-<<<<<<< HEAD
-=======
-
-  
-  
->>>>>>> style
 
   return ( 
       <div>
+        <Counter />
         {isSignedIn && <User src="/image.jpg" alt="Domagoj" username="Domagoj" />}
         <form className="form">
           <div className="form-field">
