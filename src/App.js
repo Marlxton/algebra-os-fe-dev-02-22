@@ -10,6 +10,12 @@ import {User} from './components/User';
 
 function App() {
   const isSignedIn = true;
+<<<<<<< HEAD
+=======
+
+  
+  
+>>>>>>> style
 
   return ( 
       <div>

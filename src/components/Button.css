@@ -1,7 +1,8 @@
 .button {
     border: 1px solid green;
-    background-color: rgb(63, 230, 63);
-    color: rgb(21, 14, 215);
+    border-radius: 5px;
+    background-color: rgb(17, 245, 17);
+    color: rgb(215, 14, 125);
     min-height: 32px;
     padding: 0 8px;
   }
