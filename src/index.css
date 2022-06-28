@@ -4,11 +4,10 @@ html {
 }
 
 body {
+  margin: 2%;
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
- /* background-color: aqua ; */
- background: rgb(34,193,195);
  background: linear-gradient(95deg, rgb(34, 195, 133) 0%, rgb(236, 192, 95) 100%);
 }
 

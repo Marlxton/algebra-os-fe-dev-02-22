@@ -1,13 +1,19 @@
 .counter {
     display: inline-block;
-    padding: 16px;
-    background: rgb(74, 210, 128);
-    text-align: center;
-    color: rgb(25, 26, 24);
+    padding: 20px;
+    background: rgb(89, 221, 142);
+    color: rgb(49, 51, 47);
+    
+    
 }
 
 .plusMinus{
     background: white;
-    padding: 16px;
+    padding: 20px;
     font-weight: bold;
+}
+
+.plusMinus:hover {
+    background: red;
+    color: white;
 }

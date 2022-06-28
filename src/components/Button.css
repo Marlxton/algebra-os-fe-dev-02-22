@@ -1,12 +1,18 @@
 .button {
     border: 1px solid green;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: rgb(17, 245, 17);
     color: rgb(215, 14, 125);
-    min-height: 32px;
+    min-height: 35px;
     padding: 0 8px;
+    width: 10%;
   }
 
   .button + .button {
-    margin-left: 10px;
+    margin-left: 20px;
+  }
+
+  .button:hover {
+    background-color: #ccc917;
+    color: white;
   }

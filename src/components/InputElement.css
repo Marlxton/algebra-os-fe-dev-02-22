@@ -1,12 +1,17 @@
 .label {
     margin-bottom: 8px;
+    font-size: 2rem;
+    color: rgb(10, 10, 1);
+    font-weight: bolder;
   }
   .input {
     border: 1px solid rgb(0, 9, 128);
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: lightblue;
-    min-height: 32px;
+    min-height: 35px;
     padding: 0 8px;
     color: red;
     font-weight: bold;
+    font-size: 2rem;
+    width: 32%;
   }
