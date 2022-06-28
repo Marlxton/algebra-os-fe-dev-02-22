@@ -3,17 +3,17 @@ import {InputElement} from './components/InputElement';
 import Button from './components/Button';
 import FormError from './components/FormError';
 import FormMessage from './components/FormMessage';
+import {User} from './components/User';
 
 
 
 
 function App() {
-  const isSignedIn = false;
-
-  
-  
+  const isSignedIn = true;
 
   return ( 
+      <div>
+        <User src="/image.jpg" alt="Domagoj" username="Domagoj" />
         <form className="form">
           <div className="form-field">
             <InputElement label="Username" type="text" />
@@ -28,8 +28,10 @@ function App() {
           </div>
           <FormError visible={!isSignedIn} />
           <FormMessage visible={isSignedIn} />
+          
 
         </form>
+      </div>
   );
 }
 
