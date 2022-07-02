@@ -1,39 +1,26 @@
 import "./App.css";
-import {InputElement} from './components/InputElement';
-import Button from './components/Button';
-import FormError from './components/FormError';
-import FormMessage from './components/FormMessage';
-import {User} from './components/User';
-import {Counter} from './components/Counter';
-
-
-
+import { useState } from "react";
+import { SignInPage } from "./pages/SignInPage";
+import { ChatRoomPage } from "./pages/ChatRoomPage";
 
 function App() {
-  const isSignedIn = true;
+  const [user, setUser] = useState(null);
 
-  return ( 
-      <div>
-        <Counter />
-        {isSignedIn && <User src="/image.jpg" alt="Domagoj" username="Domagoj" />}
-        <form className="form">
-          <div className="form-field">
-            <InputElement label="Username" type="text" />
-          </div>
+  const storeUser = (user) => {
+    setUser(user);
+  }
 
-          <div className="form-field">
-              <InputElement label="Password" type="password" />
-          </div>
-          <div className="form-field">
-           <Button type="button">Sign in</Button>
-           <Button type="reset">Reset</Button>
-          </div>
-          <FormError visible={!isSignedIn} />
-          <FormMessage visible={isSignedIn} />
-          
+  const clearUser = () => {
+    setUser(null);
+  }
 
-        </form>
-      </div>
+  const isSignedIn = user !== null;
+
+  return (
+    <div>
+      {isSignedIn && <ChatRoomPage onSignOut={clearUser} user={user} />}
+      {!isSignedIn && <SignInPage onSignIn={storeUser} />}
+    </div>
   );
 }
 

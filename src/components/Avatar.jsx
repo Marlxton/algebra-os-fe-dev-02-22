@@ -1,9 +1,7 @@
-import './Avatar.css';
+import "./Avatar.css";
 
 export function Avatar(props) {
-    return (
-        <img className='avatar' src={props.src} alt ={props.alt} />
-    );
-}
+  const avatarAlt = "Avatar " + props.username;
 
-export default Avatar;
+  return <img className="avatar" src={props.src} alt={avatarAlt} />;
+}
